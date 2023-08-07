@@ -1,0 +1,130 @@
+﻿<div class="container-fluid bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <!--Labs-->
+                <div class="mb-4 labs-fields">
+                    <h5 class="d-inline-block text-white text-uppercase border-bottom border-5 ">Test Sample Collection</h5>
+                    <h1 class="display-4">Have Your Test At Your Door-step</h1>
+                </div>
+                <!--Labs-->
+
+                <div class="mb-4 doctor-fields">
+                    <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                    <h1 class="display-4">Make An Appointment For Your Family</h1>
+                </div>
+
+                <p class="text-white mb-5">
+                    Providing services for making appointments for families involves assisting
+                    individuals in scheduling healthcare appointments
+                    for multiple family members efficiently.Understand the specific healthcare needs
+                    of each family member by conducting a thorough assessment.
+                    This includes identifying routine check-ups,
+                    vaccinations, specialist visits, and any specific concerns or conditions
+                </p>
+                <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Labs</a>
+                <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="/Service/Hospital">Find Hospital</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white text-center rounded p-5">
+                    <h1 class="mb-4 labs-fields">Select Sampling Venu&Time</h1>
+                    <h1 class="mb-4 doctor-fields ">Book An Appointment</h1>
+                    <form action="@Url.Action(Model.IsDoctorAppointment ? "Appointment" : "Labs", "Service")" method="post">
+                        <div class="row g-3">
+
+
+                            <div class="col-12 col-sm-6 labs-fields">
+                                <select class="form-select bg-light border-0 " style="height: 55px;" name="City">
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Peshawar">Peshawar</option>
+                                    <option value="Ismalabad">Islamabad</option>
+                                    <option value="Multan">Multan</option>
+                                    <option value="Faisalabad">Faisalabad</option>
+                                </select>
+                            </div>
+
+
+            <div class="col-12 col-sm-6 doctor-fields">
+            <select class="form-select bg-light border-0" style="height: 55px;" name="Department">
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="Skin Specialist">Skin Specialist</option>
+                <option value="Child Specialist">Child Specialist</option>
+                <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                <option value="Diabetes specialist">Diabetes specialist</option>
+                <option value="Eyes specialist">Eyes specialist</option>
+            </select>
+            </div>
+                            <div class="col-12 col-sm-6 labs-fields">
+                                <select class="form-select bg-light border-0" style="height: 55px;" name="Lab">
+                                    <option selected>Select Labs</option>
+                                    <option value="Chughtai">Chughtai</option>
+                                    <option value="Al-Razi Labs">Al-Razi Labs</option>
+                                    <option value="Alnoor Diagonostic">Alnoor Diagonostic</option>
+                                    <option value="Dr-Essa Labs">Dr-Essa Labs</option>
+                                    <option value="Islamabad-Diagonostic Center">Islamabad-Diagonostic Center</option>
+                                    <option value="Metropole Lab">Metropole Lab</option>
+                                    <option value="Dr-Essa Labs">Dr-Essa Labs</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-12 col-sm-6 doctor-fields">
+                                <select class="form-select bg-light border-0 doctor-fields" style="height: 55px;" name="Doctor">
+                                    <option selected>Select Doctor</option>
+                                    <option value="Doctor 1">Doctor 1</option>
+                                    <option value="Doctor 2">Doctor 2</option>
+                                    <option value="Doctor 3">Doctor 3</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;" name="Name">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;" name="Email">
+                            </div>
+
+
+                            <div class="col-12 col-sm-6 labs-fields">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Gender" style="height: 55px;" name="Gender">
+                            </div>
+
+                            <div class="col-12 col-sm-6 labs-fields">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Residential Address" style="height: 55px;" name="Address">
+                            </div>
+
+                            <div class="col-12 col-sm-6 labs-fields">
+                                <select class="form-select bg-light border-0" style="height: 55px;" name="Testtype">
+                                    <option value="Hepatitas">Hepatita</option>
+                                    <option value="Blood Cancer">Blood Cancer</option>
+                                    <option value="Boon Merrow">Boon Merrow</option>
+                                    <option value="Blood Serum">Blood Serum</option>
+                                    <option value="Diabeties">Diabeties</option>
+                                    <option value="HIV">HIV</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="date"
+                                           class="form-control bg-light border-0 datetimepicker-input"
+                                           placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;" name="Date">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control bg-light border-0 datetimepicker-input"
+                                           placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;" name="Time">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--Form END-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

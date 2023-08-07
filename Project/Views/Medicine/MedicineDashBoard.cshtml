@@ -1,0 +1,219 @@
+﻿@{
+    Layout = "_Layout";
+}
+@using Project.Models;
+@model List<Medicine>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medicine And Pharmacy</h5>
+            <h1 class="display-4">Did You call For a Medicine?</h1>
+            <h2>Liver-Medicine Stock</h2>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+            {
+                if(medicine.Description=="Liver")
+                {
+                    <div class="bg-light rounded text-center">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-top" src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" alt="">
+
+                            <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                                <h3 class="text-primary">@medicine.Name</h3>
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>@medicine.Description<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <p>Regrow your Liver</p>
+                            <p>Highly Recommended by Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                                <button onclick="addMedicine(@medicine.Id)" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<!--Cancer-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            
+            <h1>Cancer-Medicine Stock</h1>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+            {
+                if (medicine.Description == "Cancer")
+                {
+                    <div class="bg-light rounded text-center">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-top" src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" alt="">
+
+                            <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                                <h3 class="text-primary">@medicine.Name</h3>
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>@medicine.Description<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <p>Increases the Immunity</p>
+                            <p>Highly Recommended by Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button onclick="addMedicine(@medicine.Id)" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<!--Heart-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            
+            <h1>Heart-Medicine Stock</h1>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+            {
+                if (medicine.Description == "Heart")
+                {
+                    <div class="bg-light rounded text-center">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-top" src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" alt="">
+
+                            <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                                <h3 class="text-primary">@medicine.Name</h3>
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>@medicine.Description<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <p>Reduce risk of heart Attack</p>
+                            <p>Highly Recommended by Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button onclick="addMedicine(@medicine.Id)" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<!--PainRelief-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            
+            <h1>Liver-Medicine Stock</h1>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+            {
+                if (medicine.Description == "PainRelief")
+                {
+                    <div class="bg-light rounded text-center">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-top" src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" alt="">
+
+                            <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                                <h3 class="text-primary">@medicine.Name</h3>
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>@medicine.Description<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Tab</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <p>Instant Pain Relief</p>
+                            <p>Highly Recommended by Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button onclick="addMedicine(@medicine.Id)" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<!--General-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+           
+            <h1>Medicine Stock for General Use</h1>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+            {
+                if (medicine.Description == "General")
+                {
+                    <div class="bg-light rounded text-center">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-top" src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" alt="">
+
+                            <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                                <h3 class="text-primary">@medicine.Name</h3>
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>@medicine.Description<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <p>Instant Pain Relief</p>
+                            <p>Highly Recommended by Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button onclick="addMedicine(@medicine.Id)" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<button onclick="ViewCart()" style="border:none;background-color:#9d4646;color:white"><i class='bi bi-cart'>View Cart</i></button>
+
+<script>
+    var medicineIds = [];
+    function addMedicine(medicineid)
+    {
+        console.log("Function clicked")
+       medicineIds.push(medicineid);
+        console.log(medicineIds)
+    }
+
+   function ViewCart()
+   {
+        $.ajax({
+            type: 'POST',
+            url: '/Medicine/SetMedicineIds',
+            data: { medicineIds: medicineIds },
+            success: function (response) {
+                // Handle the success response from the server
+                console.log(response);
+                window.location.href = '/Medicine/MedicineCart';
+            },
+            error: function () {
+                // Handle the error, if any
+                console.log('Error occurred');
+            }
+        });
+   }
+</script>

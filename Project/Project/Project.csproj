@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\css\Images\**" />
+    <Content Remove="wwwroot\css\Images\**" />
+    <EmbeddedResource Remove="wwwroot\css\Images\**" />
+    <None Remove="wwwroot\css\Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\about.jpg" />
+    <None Include="wwwroot\img\blog-1.jpg" />
+    <None Include="wwwroot\img\blog-2.jpg" />
+    <None Include="wwwroot\img\blog-3.jpg" />
+    <None Include="wwwroot\img\hero.jpg" />
+    <None Include="wwwroot\img\price-1.jpg" />
+    <None Include="wwwroot\img\price-2.jpg" />
+    <None Include="wwwroot\img\price-3.jpg" />
+    <None Include="wwwroot\img\price-4.jpg" />
+    <None Include="wwwroot\img\team-1.jpg" />
+    <None Include="wwwroot\img\team-2.jpg" />
+    <None Include="wwwroot\img\team-3.jpg" />
+    <None Include="wwwroot\img\testimonial-1.jpg" />
+    <None Include="wwwroot\img\testimonial-2.jpg" />
+    <None Include="wwwroot\img\testimonial-3.jpg" />
+    <None Include="wwwroot\img\user.jpg" />
+  </ItemGroup>
+
+</Project>

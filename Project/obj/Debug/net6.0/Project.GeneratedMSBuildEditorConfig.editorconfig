@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Project
+build_property.RootNamespace = Project
+build_property.ProjectDir = D:\6TH SEMESTER\SCAD\WebApplications\Project\Project\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\6TH SEMESTER\SCAD\WebApplications\Project\Project
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/About/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Login_Signup/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fU2lnbnVwXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Login_Signup/Login_Doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fU2lnbnVwXExvZ2luX0RvY3Rvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Login_Signup/Login_Patient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fU2lnbnVwXExvZ2luX1BhdGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Login_Signup/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fU2lnbnVwXFNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Login_Signup/Signup_doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5fU2lnbnVwXFNpZ251cF9kb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Medicine/MedicineCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcTWVkaWNpbmVDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Medicine/MedicineDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcTWVkaWNpbmVEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Medicine/test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcdGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Blogs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxCbG9ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Hospital.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxIb3NwaXRhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Labs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxMYWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Labs_home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxMYWJzX2hvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Medicine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxNZWRpY2luZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Service/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Shared/Appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFwcG9pbnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Shared/_AppointmentForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BcHBvaW50bWVudEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/6TH SEMESTER/SCAD/WebApplications/Project/Project/Views/_LayoutStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX0xheW91dFN0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

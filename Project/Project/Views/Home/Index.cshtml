@@ -1,0 +1,683 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Doctor.com</h5>
+                <h1 class="display-1 text-white mb-md-4">Best e-Hospital In Your City</h1>
+                <div class="pt-2">
+                    <a href="/Doctor/Doctor" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Find Doctor</a>
+                    <a href="/Appointment/Appointment" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+<!--Start Services-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
+            <h1 class="display-4">Excellent Medical Services</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fa fa-2x fa-user-md text-white"></i>
+                    </div>
+                    <h4 class="mb-3">Available Doctors</h4>
+                    <p class="m-0">Doctors with exceptional services & patient satisfaction</p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="/Service/Doctor">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fa fa-2x fa-procedures text-white"></i>
+                    </div>
+                    <h4 class="mb-3">Hospitals</h4>
+                    <p class="m-0">Valuable service that helps individuals quickly find information about hospitals and their services</p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="/Service/Hospital">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fa fa-2x fa-stethoscope text-white"></i>
+                    </div>
+                    <h4 class="mb-3">Health blogs</h4>
+                    <p class="m-0">Reading health articles is an excellent way to stay informed about various health topics, gain insights into medical research, and learn about maintaining a healthy lifestyle</p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="/Service/Blogs">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fa fa-2x fa-microscope text-white"></i>
+                    </div>
+                    <h4 class="mb-3">Labs & Diagonostics</h4>
+                    <p class="m-0">providing diagnostic and testing services that aid in the prevention, diagnosis, and treatment of diseases</p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="/Service/Labs">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fa fa-2x fa-pills text-white"></i>
+                    </div>
+                    <h4 class="mb-3">Medicies and Pharmacy</h4>
+                    <p class="m-0">Convenient and efficient service that allows customers to order prescription and over-the-counter medications from the comfort of their homes or offices</p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="/Service/Medicine">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+<!-- Appointment Start -->
+<div class="container-fluid bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                    <h1 class="display-4">Make An Appointment For Your Family</h1>
+                </div>
+                <p class="text-white mb-5">
+                    Providing services for making appointments for families involves assisting
+                    individuals in scheduling healthcare appointments
+                    for multiple family members efficiently.Understand the specific healthcare needs
+                    of each family member by conducting a thorough assessment.
+                    This includes identifying routine check-ups,
+                    vaccinations, specialist visits, and any specific concerns or conditions
+                </p>
+                <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
+                <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="/Service/Hospital">Find Hospital</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white text-center rounded p-5">
+                    <h1 class="mb-4">Book An Appointment</h1>
+
+
+                    @*Appointment Form*@
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <option selected>Choose</option>
+                                    <option value="1">Gynecologist</option>
+                                    <option value="2">Skin Specialist</option>
+                                    <option value="3">Child Specialist</option>
+                                    <option value="4">Orthopedic Surgeon</option>
+                                    <option value="5">Diabetes specialist</option>
+                                    <option value="6">Eyes specialist</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <option selected>Select Doctor</option>
+                                    <option value="1">Doctor 1</option>
+                                    <option value="2">Doctor 2</option>
+                                    <option value="3">Doctor 3</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control bg-light border-0 datetimepicker-input"
+                                           placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control bg-light border-0 datetimepicker-input"
+                                           placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Appointment Form Ending -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Appointment End -->
+<!-- Team Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Doctors</h5>
+            <h1 class="display-4">Qualified Healthcare Professionals</h1>
+        </div>
+        <div class="owl-carousel team-carousel position-relative">
+            <div class="team-item">
+                <div class="row g-0 bg-light rounded overflow-hidden">
+                    <div class="col-12 col-sm-5 h-100">
+                        <img class="img-fluid h-100" src="~/img/team-1.jpg" style="object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                        <div class="mt-auto p-4">
+                            <h3>Doctor James</h3>
+                            <h6 class="fw-normal fst-italic text-primary mb-4">Neurologist Specialist</h6>
+                            <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        </div>
+                        <div class="d-flex mt-auto border-top p-4">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="row g-0 bg-light rounded overflow-hidden">
+                    <div class="col-12 col-sm-5 h-100">
+                        <img class="img-fluid h-100"  src="~/img/team-2.jpg" style="object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                        <div class="mt-auto p-4">
+                            <h3>Doctor ALI</h3>
+                            <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                            <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        </div>
+                        <div class="d-flex mt-auto border-top p-4">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="row g-0 bg-light rounded overflow-hidden">
+                    <div class="col-12 col-sm-5 h-100">
+                        <img class="img-fluid h-100"  src="~/img/team-3.jpg"  style="object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                        <div class="mt-auto p-4">
+                            <h3>Doctor Emelia</h3>
+                            <h6 class="fw-normal fst-italic text-primary mb-4">paediatric Specialist</h6>
+                            <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        </div>
+                        <div class="d-flex mt-auto border-top p-4">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-item">
+                <div class="row g-0 bg-light rounded overflow-hidden">
+                    <div class="col-12 col-sm-5 h-100">
+                        <img class="img-fluid h-100" src="~/img/team-4.jpg" style="object-fit: cover;">
+                    </div>
+                    <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                        <div class="mt-auto p-4">
+                            <h3>Doctor Fatima</h3>
+                            <h6 class="fw-normal fst-italic text-primary mb-4">Onocological Specialist</h6>
+                            <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        </div>
+                        <div class="d-flex mt-auto border-top p-4">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+<!--Labs Start-->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Labs and Diagnostic</h5>
+            <h1 class="display-4">Choose a lab</h1>
+            <h4>Lahore</h4>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/download.jpg" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Chugtai Lab</h4></a>
+                    <p class="m-0">
+                        Chughtai Lab and Healthcare has been providing quality diagnostic services in Pakistan since 1983.It is a leading medical diagnostic center in Pakistan,
+                        offering a comprehensive range of diagnostic services
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#">  <img src="~/img/al-razi-logo.png" width="120px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Al Razi Healthcare Lab</h4></a>
+                    <p class="m-0">
+                        Al Razi Healthcare Lab is the leading Lab in Lahore which is providing facilities based on the extensive necessities of patients.
+                        It provides safe,and best quality patient care and diagnostics
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/alnoor-lab.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Alnoor Diagnostic Centre</h4></a>
+                    <p class="m-0">
+                        ALNOOR Diagnostic Centre is the best diagnostic center in Lahore. Whether you are looking
+                        for radiology services or laboratory testing, we have got you
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/dr_essa.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Dr. Essa Lab, Lahore</h4></a>
+                    <p class="m-0">
+                        Dr. Essa Laboratory and Diagnostic Centre are leading clinical laboratories in Pakistan.
+                        We offer a wide range of diagnostic tests & procedures across the Pakistan
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/idc.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Islamabad Diagnostic Centre,Lahore</h4></a>
+                    <p class="m-0">
+                        At Islamabad Diagnostic Centre, we offer comprehensive
+                        diagnostic services across Pakistan.
+                        It provides timely, quality diagnostic healthcare through innovation to masse at all levels
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Lahore End -->
+<!-- Islamabad Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h4>Islamabad</h4>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/idc.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Islamabad Diagnostic Centre</h4></a>
+                    <p class="m-0">
+                        At Islamabad Diagnostic Centre, we offer comprehensive
+                        diagnostic services across Pakistan.
+                        It provides timely, quality diagnostic healthcare through innovation to masse at all levels
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#">  <img src="~/img/advanced_dignostic_center.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Advanced Diagnostic Center</h4></a>
+                    <p class="m-0">
+                        Advance Diagnostic Center (Blue Area) is a state of the art hospital
+                        located in the heart of Islamabad.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/metropole.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Metropole Lab</h4></a>
+                    <p class="m-0">
+                        Metropole Laboratories Private Limited is a state of the Art
+                        pathology laboratory located at G-8 Markaz, Islamabad, Pakistan.
+                        We are committed to providing high-quality laboratory
+                        and radiology services at very competitive prices.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/biogene.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">The Biogene Labs & Daignostic</h4></a>
+                    <p class="m-0">
+                        The Biogene Labs & Diagnostic started with a goal of
+                        providing predictive and personalized healthcare. Our mission is to ensure the generation
+                        of accurate and precise findings
+
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/ali_medical_center.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Ali Medical Centre</h4></a>
+                    <p class="m-0">
+                        Ali Medical Centre is a State of the Art 72 bedded multi-specialty hospital.
+                        The hospital Comprises of modern operation theaters, Intensive Care Unit,PICU, HDU, Labor
+                        and Delivery Rooms.
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Islamabad End -->
+<!-- Karachi Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h4>Karachi</h4>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/download.jpg" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Chugtai Lab</h4></a>
+                    <p class="m-0">
+                        Chughtai Lab and Healthcare has been providing quality diagnostic services in Pakistan since 1983.It is a leading medical diagnostic center in Pakistan,
+                        offering a comprehensive range of diagnostic services
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"> <img src="~/img/darul_sehat.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Darul Sehat Hospital Laboratory</h4></a>
+                    <p class="m-0">
+                        Darul Sehat Hospital is run & own by Darul Shifa International (Pvt) Ltd. Darul Sehat Hospital is a 250 bed tertiary
+                        care teaching Hospital for Liaquat College of Medicine & Dentistry
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"><img src="~/img/hashmanis.png" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">Hashmanis Hospital Laboratory</h4></a>
+                    <p class="m-0">
+                        Hashmanis Hospital Laboratory is a top Pathology Lab practicing in Saddar, Karachi.
+                        Hashmanis laboratory offers a wide array of laboratory tests and comprehensive
+                        consultation in clinical and diagnostic immunology
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-4">
+                        <a href="#"><img src="~/img/onehealth.jpg" width="100px" /> </a>
+                    </div>
+                    <a href="#"><h4 class="mb-3">One Health Lab</h4></a>
+                    <p class="m-0">
+                        Free Blood Sample Collection in Karachi.
+                        Cash on Delivery & Online Payment services available.
+
+                    </p>
+                    <a class="btn btn-lg btn-primary rounded-pill" href="">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Labs End-->
+<!-- Search Start -->
+<div class="container-fluid bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
+            <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
+            <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
+        </div>
+        <div class="mx-auto" style="width: 100%; max-width: 600px;">
+            <div class="input-group">
+                <select class="form-select border-primary w-25" style="height: 60px;">
+                    <option selected>Department</option>
+                    <option value="1">Gynecologist</option>
+                    <option value="2">Neurologist</option>
+                    <option value="3">Cardiologist</option>
+                    <option value="3">Opthamologist</option>
+                    <option value="3">Dermatologist</option>
+                </select>
+                <input type="text" class="form-control border-primary w-50" placeholder="Keyword">
+                <button class="btn btn-dark border-0 w-25">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search End -->
+<!-- Medicine Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medicine And Pharmacy</h5>
+            <h1 class="display-4">Did You call For a Medicine?</h1>
+        </div>
+        <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+            <div class="bg-light rounded text-center">
+                <div class="position-relative">
+                    <img class="img-fluid rounded-top" src="~/img/medicine-5.png"  alt="">
+                    <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                        <h3 class="text-primary">ABS Bone Care</h3>
+                        <h1 class="display-4 text-white mb-0">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">Bone</small>Care<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Medicine</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="text-center py-5">
+                    <p>Instant Pain Relief</p>
+                    <p>Highly Recomended by Doctors</p>
+                    <p>Highest Success Rate</p>
+                    <p>Telephone Service</p>
+                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add to Cart</a>
+                </div>
+            </div>
+            <div class="bg-light rounded text-center">
+                <div class="position-relative">
+                    <img class="img-fluid rounded-top"  src="~/img/medicine-2.jpg" alt="">
+                    <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                        <h3 class="text-primary">Avastin</h3>
+                        <h1 class="display-4 text-white mb-0">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">Care</small>Cancer<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Treatment</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="text-center py-5">
+                    <p>Emergency Medical Treatment</p>
+                    <p>Highly Recomended By Doctors</p>
+                    <p>Highest Success Rate</p>
+                    <p>Telephone Service</p>
+                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add To Cart</a>
+                </div>
+            </div>
+            <div class="bg-light rounded text-center">
+                <div class="position-relative">
+                    <img class="img-fluid rounded-top" src="~/img/medicine-3.jpg"   alt="">
+                    <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                        <h3 class="text-primary">LivoLin Fort</h3>
+                        <h1 class="display-4 text-white mb-0">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>Liver<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="text-center py-5">
+                    <p>Looking For Healthy Liver</p>
+                    <p>Highly Recomended by Doctors</p>
+                    <p>Highest Success Rate</p>
+                    <p>Telephone Service</p>
+                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add To Cart</a>
+                </div>
+            </div>
+            <div class="bg-light rounded text-center">
+                <div class="position-relative">
+                    <img class="img-fluid rounded-top"  src="~/img/medicine-6.png"  alt="">
+                    <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                        <h3 class="text-primary">Silliver</h3>
+                        <h1 class="display-4 text-white mb-0">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;"></small>Liver<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">Care</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="text-center py-5">
+                    <p>Emergency Medical Treatment</p>
+                    <p>Highly Experienced Doctors</p>
+                    <p>Highest Success Rate</p>
+                    <p>Telephone Service</p>
+                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Medicine End -->
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Customers FeedBack</h5>
+            <h1 class="display-4">Patients Say About Our Services</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="~/img/testimonial-1.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Ema Watson</h3>
+                        <h6 class="fw-normal text-primary mb-3">House Wife</h6>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="~/img/testimonial-2.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Jhon Wick</h3>
+                        <h6 class="fw-normal text-primary mb-3">Business Man</h6>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="~/img/testimonial-3.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Katherine Langford</h3>
+                        <h6 class="fw-normal text-primary mb-3">Actoress</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->

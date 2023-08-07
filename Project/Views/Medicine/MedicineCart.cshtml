@@ -1,0 +1,340 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Doctor.Com</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    @*<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">*@
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    @*<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />*@
+    @*<link href="~/lib/tempusdominus/css/tempusdominus-bootstrap-4.css" rel="stylesheet" />*@
+    <link href="~/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    @* <link href="css/bootstrap.min.css" rel="stylesheet">*@
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    @*<link href="css/style.css" rel="stylesheet">*@
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/medicine.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    @using Project.Models;
+    @model List<Medicine>
+    <div class="h-100 h-custom" style="background-color: #d2c9ff;position:relative">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12">
+                    <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+                                <div class="col-lg-8">
+                                    <div class="p-5">
+                                        <div class="d-flex justify-content-between align-items-center mb-5">
+                                            <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                                            <h6 class="mb-0 text-muted">@Model.Count items</h6>
+                                        </div>
+                                        <h6 id="SubTotalelement" style="display:none">0</h6>
+                                        @foreach (var medicine in Model ?? Enumerable.Empty<Medicine>())
+                                        {
+                                            <div class="row mb-4 d-flex justify-content-between align-items-center" id="medicineRow_@medicine.Id">
+                                            <hr class="my-4">
+                                            <div class="row mb-4 d-flex justify-content-between align-items-center">
+                                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(medicine.Image)" class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                                </div>
+                                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                                    <h6 class="text-muted">@medicine.Description</h6>
+                                                    <h6 class="text-black mb-0">@medicine.Name</h6>
+                                                </div>
+                                                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+
+                                                    <input id="quantityInput_@medicine.Id" min="0" name="quantity" value="@medicine.Quantity" type="number"
+                                                           class=" quantityInput form-control form-control-sm" onchange="updatePrice(@medicine.Id,@medicine.Price)" />
+
+                                                </div>
+                                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                                    <h6 id="priceValue_@medicine.Id" class="mb-0">@medicine.Price $</h6>
+                                                </div>
+                                                
+                                                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                                    <a href="#!" onclick="removeMedicine(@medicine.Id)" class="text-muted"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="my-4">
+                                        </div>
+        <script>
+                function TotalBill(medicinePrice) 
+                {
+                    var subtotalElement = document.getElementById("SubTotalelement");
+                    if (subtotalElement)
+                    {
+                                    var currentTotal = subtotalElement.textContent;
+                                    var totalInt = parseInt(currentTotal, 10);
+                                    totalInt+=medicinePrice;
+                                    subtotalElement.textContent =totalInt.toString();
+                                    
+                    }
+                }
+                    TotalBill(@medicine.Price);
+        </script>
+
+                                        }
+                                        <div class="pt-5">
+                                            <h6 class="mb-0">
+                                                <a href="/Medicine/MedicineDashBoard" class="text-body">
+                                                    <i class="fas fa-long-arrow-alt-left me-2"></i>Back to shop
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bg-grey">
+                                    <div class="p-5">
+                                        <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                                        <hr class="my-4">
+
+                                        <div class="d-flex justify-content-between mb-4">
+                                            <h5 class="text-uppercase">items @Model.Count</h5>
+                                            <h5 id="SubTotal">€ 132.00</h5>
+                                        </div>
+       
+                                        <h5 class="text-uppercase mb-3">Shipping</h5>
+
+                                        <div class="mb-4 pb-2">
+                                            <select class="select">
+                                                <option value="1">Standard-Delivery- €5.00</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                                <option value="4">Four</option>
+                                            </select>
+                                        </div>
+
+                                        <h5 class="text-uppercase mb-3">Give code</h5>
+
+                                        <div class="mb-5">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Examplea2">Enter your code</label>
+                                            </div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="d-flex justify-content-between mb-5">
+                                            <h5 class="text-uppercase">Total price</h5>
+                                            <h5 id="Payable">€ 137.00</h5>
+                                        </div>
+                                        <script>
+                function initialTotal() {
+                    var subtotalElement = document.getElementById("SubTotalelement");
+                    if (subtotalElement) {
+                        var currentTotal = subtotalElement.textContent;
+                        var total = document.getElementById("SubTotal");
+                        if (total) {
+                            var totalObject = total.textContent;
+                            total.textContent = "€ " + currentTotal.toString()
+                            var payable=document.getElementById("Payable");
+                   
+                            if(payable)
+                            {
+                                var temp = parseInt(currentTotal);
+                                temp = temp + 5;
+                                payable.textContent = "€ " +temp;
+                            }
+                        }
+                    }
+                }
+                initialTotal();
+            </script>
+
+                                        <button onclick="checkout()" type="button" class="btn btn-dark btn-block btn-lg"
+                                                data-mdb-ripple-color="dark">
+                                            Register
+                                        </button>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function updatePrice(medicineId, medicinePrice) {
+        var quantityInput = document.getElementById('quantityInput_' + medicineId);
+        var priceTag = document.getElementById('priceValue_' + medicineId);
+        var indmedicinePrice = parseInt(priceTag.textContent);
+        var quantity = parseInt(quantityInput.value);
+        updateIdQuantity(medicineId, quantity);
+        var totalPrice = quantity * medicinePrice;
+        priceTag.textContent = totalPrice + "$";
+        
+        UpdatePayementTags(indmedicinePrice,totalPrice);
+        
+    }
+    function UpdatePayementTags(indmedicinePrice, totalPrice)
+    {
+        var total = document.getElementById("SubTotalelement");
+        if (total) {
+            var totalObject = parseInt(total.textContent);
+
+            totalObject = totalObject - indmedicinePrice;
+           
+            totalObject = totalObject + totalPrice;
+            total.textContent = totalObject;
+     
+            var subtotal = document.getElementById("SubTotal");
+            if (subtotal) {
+                var subtotalobject = parseInt(subtotal.textContent);
+                subtotal.textContent = "$ " + totalObject;
+
+                var payable = document.getElementById("Payable");
+
+                if (payable) {
+                    var temp = parseInt(totalObject);
+                    temp = temp + 5;
+                    payable.textContent = "€ " + temp;
+                }
+            }
+        }
+    }
+    function removeMedicine(medicineId) {
+        var priceTag = document.getElementById('priceValue_' + medicineId);
+        var indmedicinePrice = parseInt(priceTag.textContent);
+        removeIdFromQuantity(medicineId);
+        UpdatePayementTags(indmedicinePrice,0);
+        $.ajax({
+            url: '/Medicine/RemoveMedicine',
+            type: 'POST',
+            data: { medicineIds: [medicineId] },
+            success: function () {
+                // Update the UI to remove the medicine row
+                var medicineRow = document.getElementById('medicineRow_' + medicineId);
+                medicineRow.remove();
+            },
+            error: function () {
+                // Handle the error if needed
+            }
+        });
+    }
+    window.onload = function () {
+        checkOrCreateIdQuantityCookie();
+    };
+    function checkOrCreateIdQuantityCookie() 
+    {
+        console.log("Check for cookie");
+        var idQuantityCookie = document.cookie
+            .split(';')
+            .map(cookie => cookie.trim())
+            .find(cookie => cookie.startsWith('idQuantity='));
+
+        if (!idQuantityCookie) {
+            // Create the cookie with an empty array
+            var initialCookieValue = encodeURIComponent(JSON.stringify([]));
+            document.cookie = 'idQuantity=' + initialCookieValue + '; path=/';
+        }
+    }
+
+    function updateIdQuantity(medicineId,medicineQunat) {
+        // Retrieve the cookie value
+        var idQuantityCookie = document.cookie
+            .split(';')
+            .map(cookie => cookie.trim())
+            .find(cookie => cookie.startsWith('idQuantity='));
+
+        var idQuantityArray = [];
+
+        if (idQuantityCookie) {
+            // Decode the cookie value
+            var decodedCookie = decodeURIComponent(idQuantityCookie.substring('idQuantity='.length));
+
+            // Deserialize the cookie value
+            idQuantityArray = JSON.parse(decodedCookie);
+        }
+
+        // Find the object with the provided ID in the array
+        var existingObject = idQuantityArray.find(obj => obj.id === medicineId);
+
+        if (existingObject) {
+            // If the object exists, update its quantity
+            existingObject.quantity = medicineQunat;
+        } else {
+            // If the object doesn't exist, add a new object with the provided ID and quantity 1
+            idQuantityArray.push({ id: medicineId, quantity: medicineQunat });
+        }
+
+        // Serialize the updated idQuantityArray
+        var updatedCookieValue = encodeURIComponent(JSON.stringify(idQuantityArray));
+
+        // Update the cookie value
+        document.cookie = 'idQuantity=' + updatedCookieValue + '; path=/';
+        console.log("Cookie is updated");
+    }
+    function removeIdFromQuantity(id) {
+        // Retrieve the cookie value
+        var idQuantityCookie = document.cookie
+            .split(';')
+            .map(cookie => cookie.trim())
+            .find(cookie => cookie.startsWith('idQuantity='));
+
+        if (idQuantityCookie) {
+            // Decode the cookie value
+            var decodedCookie = decodeURIComponent(idQuantityCookie.substring('idQuantity='.length));
+
+            // Deserialize the cookie value
+            var idQuantityArray = JSON.parse(decodedCookie);
+
+            // Find the index of the object with the provided ID
+            var index = idQuantityArray.findIndex(obj => obj.id === id);
+
+            if (index !== -1) {
+               
+                idQuantityArray.splice(index, 1);
+
+                
+                var updatedCookieValue = encodeURIComponent(JSON.stringify(idQuantityArray));
+
+                
+                document.cookie = 'idQuantity=' + updatedCookieValue + '; path=/';
+                console.log("Cookie is removed");
+            }
+        }
+    }
+    function checkout() {
+        
+        $.ajax({
+            url: '/Medicine/Checkout',
+            type: 'POST',
+            data: { medicineIds: [12] },
+            success: function (result) {
+                
+            },
+            error: function (xhr, status, error) {
+                
+            }
+        });
+    }
+</script>
