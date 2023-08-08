@@ -1,0 +1,569 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\chat.css",
+      "PackagePath": "staticwebassets\\css\\chat.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\medicine.css",
+      "PackagePath": "staticwebassets\\css\\medicine.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\Al-Razi-Logo.png",
+      "PackagePath": "staticwebassets\\img\\Al-Razi-Logo.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\Dr_Essa.png",
+      "PackagePath": "staticwebassets\\img\\Dr_Essa.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\IDC.png",
+      "PackagePath": "staticwebassets\\img\\IDC.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\advanced_dignostic_center.png",
+      "PackagePath": "staticwebassets\\img\\advanced_dignostic_center.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\ali_medical_center.png",
+      "PackagePath": "staticwebassets\\img\\ali_medical_center.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\alnoor-lab.png",
+      "PackagePath": "staticwebassets\\img\\alnoor-lab.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\biogene.png",
+      "PackagePath": "staticwebassets\\img\\biogene.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-1.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-2.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-3.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\darul_sehat.png",
+      "PackagePath": "staticwebassets\\img\\darul_sehat.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\download.jpg",
+      "PackagePath": "staticwebassets\\img\\download.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\fsd-IDAP.jpg",
+      "PackagePath": "staticwebassets\\img\\fsd-IDAP.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\fsd-allied.jpg",
+      "PackagePath": "staticwebassets\\img\\fsd-allied.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\fsd-care+.jpg",
+      "PackagePath": "staticwebassets\\img\\fsd-care+.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\fsd-fatimah.jpg",
+      "PackagePath": "staticwebassets\\img\\fsd-fatimah.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\hashmanis.png",
+      "PackagePath": "staticwebassets\\img\\hashmanis.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\hero.jpg",
+      "PackagePath": "staticwebassets\\img\\hero.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\isl-mother-child-care.jpg",
+      "PackagePath": "staticwebassets\\img\\isl-mother-child-care.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\isl-pims.jpg",
+      "PackagePath": "staticwebassets\\img\\isl-pims.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\isl-saraf.jpg",
+      "PackagePath": "staticwebassets\\img\\isl-saraf.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\isl-shifa.jpg",
+      "PackagePath": "staticwebassets\\img\\isl-shifa.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\l-behria.jpeg",
+      "PackagePath": "staticwebassets\\img\\l-behria.jpeg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\l-doch.jpg",
+      "PackagePath": "staticwebassets\\img\\l-doch.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\l-jinah.jpg",
+      "PackagePath": "staticwebassets\\img\\l-jinah.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\l-serv.jpg",
+      "PackagePath": "staticwebassets\\img\\l-serv.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\l-skh.jpg",
+      "PackagePath": "staticwebassets\\img\\l-skh.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\labs.avif",
+      "PackagePath": "staticwebassets\\img\\labs.avif"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-1.jpeg",
+      "PackagePath": "staticwebassets\\img\\medicine-1.jpeg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-2.jpg",
+      "PackagePath": "staticwebassets\\img\\medicine-2.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-3.jpg",
+      "PackagePath": "staticwebassets\\img\\medicine-3.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-3456.JPG",
+      "PackagePath": "staticwebassets\\img\\medicine-3456.JPG"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-5.png",
+      "PackagePath": "staticwebassets\\img\\medicine-5.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\medicine-6.png",
+      "PackagePath": "staticwebassets\\img\\medicine-6.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\metropole.png",
+      "PackagePath": "staticwebassets\\img\\metropole.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\onehealth.jpg",
+      "PackagePath": "staticwebassets\\img\\onehealth.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\price-1.jpg",
+      "PackagePath": "staticwebassets\\img\\price-1.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\price-2.jpg",
+      "PackagePath": "staticwebassets\\img\\price-2.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\price-3.jpg",
+      "PackagePath": "staticwebassets\\img\\price-3.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\price-4.jpg",
+      "PackagePath": "staticwebassets\\img\\price-4.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\img\\team-1.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\img\\team-2.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\img\\team-3.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\img\\team-4.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\team-5.jpg",
+      "PackagePath": "staticwebassets\\img\\team-5.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\testimonial-3.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial-3.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Project.props",
+      "PackagePath": "build\\Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Project.props",
+      "PackagePath": "buildMultiTargeting\\Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Project.props",
+      "PackagePath": "buildTransitive\\Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

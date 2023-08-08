@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "_Layout";
+}
+<!-- DoctorAppointment.cshtml -->
+@using Project.Models;
+<h2>Doctor Appointment</h2>
+
+@Html.Partial("_AppointmentForm", new { IsDoctorAppointment = true })
+
+<style>
+    .labs-fields {
+        display: none;
+    }
+</style>

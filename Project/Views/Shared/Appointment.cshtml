@@ -1,0 +1,11 @@
+﻿@*@{
+    Layout = "_Layout";
+}
+@model List<Medicine>;
+<h3>Medicines:</h3>
+<ul>
+    @foreach (var doctor in Model)
+    {
+        <li>@doctor.Name</li>
+    }
+</ul>*@
