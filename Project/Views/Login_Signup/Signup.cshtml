@@ -1,56 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    Layout = "_Layout";
-}
+﻿<head>
+    <script src="~/js/login.js"></script>
+    <link href="~/css/signup.css" rel="stylesheet" />
+</head>
 <body>
-    <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100  ">
-            <div class="row d-flex justify-content-center align-items-center h-100 custom-heigh">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-5 t">
-                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                        <div class="card-body p-5 text-center">
+    <section class="container" id="cardContainer">
+        <div class="login-container" id="log1">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">SIGNUP</h1>
+                <p>
+                    <button class="opacity" id="doctor" onclick="Doctor()">As Doctor</button>
+                    <button class="opacity" id="patient" onclick="patient()">As Patient</button>
+                </p>
 
-                            <div class="mb-md-5 mt-md-4 pb-5">
-
-                                <h2 class="fw-bold mb-2 text-uppercase">SignUp</h2>
-                               
-                                <form action="/Login_Signup/Signup_Successful" method="post">
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="email" id="typeEmailX" class="form-control form-control-lg mt-5" name=Email />
-                                        <label class="form-label mt-1 " for="typeEmailX">Email</label>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="text" id="typeEmailX" class="form-control form-control-lg" name=Name />
-                                        <label class="form-label mt-1" for="typeEmailX">Username</label>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="text" id="typeEmailX" class="form-control form-control-lg" name=Gender />
-                                        <label class="form-label mt-1" for="typeEmailX">Gender</label>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="password" id="typePasswordX" class="form-control form-control-lg" name=Password />
-                                        <label class="form-label mt-1" for="typePasswordX">Password</label>
-                                    </div>
-                                  
-                                    @* <div class="form-outline form-white mb-4">
-                                    <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                                    <label class="form-label mt-1" for="typePasswordX">Confirm Password</label>
-                                    </div>
-                                    *@
-                                    <button class="btn btn-outline-light btn-lg px-5 mt-3" type="submit">Signup</button>
-                                </form>
-
-                              
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="circle circle-two"></div>
         </div>
+        <div class="theme-btn-container"></div>
+
     </section>
+
 </body>
+<script>
+    document.getElementById('doctor').addEventListener('click', function () {
+        window.location.href = '/Login_signup/Signup_Doctor';
+    });
+    document.getElementById('patient').addEventListener('click', function () {
+        window.location.href = '/Login_signup/Signup_Patient';
+    });
+</script>

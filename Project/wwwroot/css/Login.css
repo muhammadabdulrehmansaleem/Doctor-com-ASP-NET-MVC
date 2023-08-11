@@ -60,7 +60,7 @@ h1 {
     -o-border-radius: 10px;
 }
 
-.login-container form input {
+.login-container p input {
     display: block;
     padding: 14.5px;
     width: 100%;
@@ -80,13 +80,13 @@ h1 {
     -o-border-radius: 5px;
 }
 
-    .login-container form input:focus {
+    .login-container p input:focus {
         box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
         animation: wobble 0.3s ease-in;
         -webkit-animation: wobble 0.3s ease-in;
     }
 
-.login-container form button {
+.login-container p button {
     background-color: var(--primary-color);
     color: var(--color);
     display: block;
@@ -111,7 +111,7 @@ h1 {
     -o-transition: all 0.1s ease-in-out;
 }
 
-    .login-container form button:hover {
+    .login-container p button:hover {
         box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
         transform: scale(1.02);
         -webkit-transform: scale(1.02);

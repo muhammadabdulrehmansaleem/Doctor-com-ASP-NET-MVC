@@ -51,10 +51,3 @@ const displayThemeButtons = () => {
 };
 
 displayThemeButtons();
-function Doctor() {
-    console.log("hello");
-    window.location.href = '/Login_Signup/Login_Doctor';
-}
-function patient() {
-    window.location.href = "/Login_Signup/Login_Patients";
-}

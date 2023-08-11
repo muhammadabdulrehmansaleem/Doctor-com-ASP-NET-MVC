@@ -9,10 +9,13 @@
             <div class="form-container">
                 <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
                 <h1 class="opacity">LOGIN</h1>
-                <form>
+                <p>
                     <button class="opacity" id="doctor" onclick="Doctor()">As Doctor</button>
                     <button class="opacity" id="patient" onclick="patient()" >As Patient</button>
-                </form>
+                </p>
+                <div class="register-forget opacity">
+                    <a href="/Login_Signup/Signup">Signup</a>
+                </div>
                
             </div>
             <div class="circle circle-two"></div>
@@ -22,3 +25,11 @@
     </section>
 
 </body>
+<script>
+    document.getElementById('doctor').addEventListener('click', function () {
+        window.location.href = '/Login_signup/login_Doctor';
+    });
+    document.getElementById('patient').addEventListener('click', function () {
+        window.location.href = '/Login_signup/login_Patient';
+    });
+</script>

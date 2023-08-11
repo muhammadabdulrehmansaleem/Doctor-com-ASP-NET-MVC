@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.Models;
+using Newtonsoft.Json;
 
 namespace Project.Controllers
 {
+    
     public class Login_SignupController : Controller
     {
         public IActionResult Login()
@@ -17,8 +19,12 @@ namespace Project.Controllers
         {
             return View();
         }
+        public IActionResult Signup_Patient()
+        {
+            return View();
+        }
         [HttpPost]
-        public IActionResult Signup_Successful(Patient s)
+        public IActionResult Signup_Patient_Successful(Patient s)
         {
 
             DoctorComContext cx = new DoctorComContext();
@@ -34,7 +40,7 @@ namespace Project.Controllers
             }
             cx.Patients.Add(s);
             cx.SaveChanges();
-            return View("~/Views/Home/Index.cshtml");
+            return View("Login_Patient", "Login_Signup");
         }
         [HttpPost]
         public IActionResult Signup_Doctor_Succsessful(Doctor s)
@@ -51,10 +57,10 @@ namespace Project.Controllers
             }
             cx.Doctors.Add(s);
             cx.SaveChanges();
-            return View("~/Views/Home/Index.cshtml");
+            return View("Login_Doctor","Login_Signup");
 
         }
-        public IActionResult Login_Patients()
+        public IActionResult Login_Patient()
         {
             return View();
         }
@@ -63,7 +69,7 @@ namespace Project.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login_Patients_Successful(Patient s)
+        public IActionResult Login_Patient_Successful(Patient s)
         {
             DoctorComContext cx = new DoctorComContext();
             List<Patient> data = cx.Patients.ToList();
@@ -71,11 +77,19 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
+                    string userJson = JsonConvert.SerializeObject(pat);
+                    // Create a cookie to store the patient data
+                    var cookieOptions = new CookieOptions
+                    {
+                        Expires = DateTime.Now.AddDays(1) // Set cookie expiration to 1 day
+                    };
+                    Response.Cookies.Append("UserInfo", userJson, cookieOptions);
+
                     return View("~/Views/Home/Index.cshtml");
                 }
             }
             ViewBag.Message = "Password or email is incorrect";
-            return View("~/Views/Login_Signup/Login_Patients.cshtml");
+            return View("~/Views/Login_Signup/Login_Patient.cshtml");
         }
         [HttpPost]
         public IActionResult Login_Doctor_Successful(Doctor s)
@@ -86,11 +100,26 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
+                    string userJson = JsonConvert.SerializeObject(pat);
+                    // Create a cookie to store the patient data
+                    var cookieOptions = new CookieOptions
+                    {
+                        Expires = DateTime.Now.AddDays(1) // Set cookie expiration to 1 day
+                    };
+                    Response.Cookies.Append("UserInfo", userJson, cookieOptions);
+
                     return View("~/Views/Home/Index.cshtml");
                 }
             }
             ViewBag.Message = "Password or email is incorrect";
             return View("~/Views/Login_Signup/Login_Doctor.cshtml");
+        }
+        public IActionResult ClearPatientCookie()
+        {
+            // Delete the "PatientInfo" cookie
+            Response.Cookies.Delete("UserInfo");
+
+            return RedirectToAction("Index", "Home"); // Redirect to home page or any other page
         }
     }
 }

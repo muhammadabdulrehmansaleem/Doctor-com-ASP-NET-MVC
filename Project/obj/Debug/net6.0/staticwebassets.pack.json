@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Login_Doctor.css",
+      "PackagePath": "staticwebassets\\css\\Login_Doctor.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Signup.css",
+      "PackagePath": "staticwebassets\\css\\Signup.css"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -173,6 +185,10 @@
       "PackagePath": "staticwebassets\\img\\onehealth.jpg"
     },
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\pp.png",
+      "PackagePath": "staticwebassets\\img\\pp.png"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\price-1.jpg",
       "PackagePath": "staticwebassets\\img\\price-1.jpg"
     },
@@ -227,6 +243,10 @@
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login.js",
       "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login_Doctor.js",
+      "PackagePath": "staticwebassets\\js\\Login_Doctor.js"
     },
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\chat.js",

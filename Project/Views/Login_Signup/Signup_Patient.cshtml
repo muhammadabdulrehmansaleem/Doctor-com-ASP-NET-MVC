@@ -1,0 +1,29 @@
+﻿<head>
+    <script src="~/js/login_doctor.js"></script>
+    <link href="~/css/login_doctor.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">SIGNUP AS PATIENT</h1>
+                <form action="/Login_Signup/Signup_Patient_Successful" method="post">
+                    <input type="text" placeholder="Name" name="Name"/>
+                    <input type="email" placeholder="Email" name="Email"/>
+                    <input type="text" placeholder="Gender" name="Gender" />
+                    <input type="password" placeholder="PASSWORD" name="Password" />
+                    <button class="opacity" id="btn_login">SUBMIT</button>
+                </form>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+</body>
+<script>
+    document.getElementById('btn_login').addEventListener('click', function () {
+        window.location.href = '/Login_Signup/Login_Patient';
+    });
+</script>

@@ -1,6 +1,6 @@
 ﻿<head>
-    <script src="~/js/login.js"></script>
-    <link href="~/css/login.css" rel="stylesheet" />
+    <script src="~/js/login_doctor.js"></script>
+    <link href="~/css/login_doctor.css" rel="stylesheet" />
 </head>
 <body>
     <section class="container">
@@ -9,14 +9,14 @@
             <div class="form-container">
                 <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
                 <h1 class="opacity">LOGIN</h1>
-                <form>
-                    <input type="text" placeholder="USERNAME" />
-                    <input type="password" placeholder="PASSWORD" />
-                    <button class="opacity">SUBMIT</button>
+                <form action="/Login_Signup/Login_Doctor_Successful" method="post">
+                    <input type="email" id="typeEmailX" name="Email" placeholder="EMAIL" required/>
+                    <input type="password" id="typePasswordX" placeholder="Password" name="Password" required />
+                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">@ViewBag.Message</a></p>
+                    <button class="opacity" id="btn_login" >SUBMIT</button>
                 </form>
                 <div class="register-forget opacity">
-                    <a href="">REGISTER</a>
-                    <a href="">FORGOT PASSWORD</a>
+                    <a href="/Login_signup/Signup">Signup</a>
                 </div>
             </div>
             <div class="circle circle-two"></div>
@@ -24,3 +24,8 @@
         <div class="theme-btn-container"></div>
     </section>
 </body>
+<script>
+    document.getElementById('btn_login').addEventListener('click', function () {
+        window.location.href = '/Home/Index';
+    });
+</script>
