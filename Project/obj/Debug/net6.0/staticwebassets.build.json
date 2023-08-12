@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GkgxXalJEmfkQ1GEJ7ow7O+RDXsajxRUEq6k4Msd/8o=",
+  "Hash": "gMfVQq4qkpDzS6UxPOMEZlqe4I5w8V/ZZ/DWIkTr42U=",
   "Source": "Project",
   "BasePath": "_content/Project",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\chat.css"
+    },
+    {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctor.css",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/Doctor.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Doctor.css"
+    },
+    {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctors-profile.css",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/Doctors-profile.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Doctors-profile.css"
     },
     {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Login.css",
@@ -100,23 +134,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\medicine.css"
-    },
-    {
-      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Profile.css",
-      "SourceId": "Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
-      "BasePath": "_content/Project",
-      "RelativePath": "css/Profile.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Profile.css"
     },
     {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Signup.css",
@@ -782,6 +799,23 @@
       "OriginalItemSpec": "wwwroot\\img\\metropole.png"
     },
     {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\nnn.txt",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "img/nnn.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\nnn.txt"
+    },
+    {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\onehealth.jpg",
       "SourceId": "Project",
       "SourceType": "Discovered",
@@ -1020,6 +1054,23 @@
       "OriginalItemSpec": "wwwroot\\img\\testimonial-3.jpg"
     },
     {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\unknown.avif",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "img/unknown.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\unknown.avif"
+    },
+    {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\user.jpg",
       "SourceId": "Project",
       "SourceType": "Discovered",
@@ -1052,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\chat.js"
+    },
+    {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Doctor-profile.js",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "js/Doctor-profile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Doctor-profile.js"
     },
     {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login.js",

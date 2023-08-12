@@ -15,7 +15,9 @@ namespace Project.Controllers
         }
         public IActionResult Doctor()
         {
-            return View();
+            DoctorComContext cx = new DoctorComContext();
+            List<Doctor> data = cx.Doctors.ToList();
+            return View(data);
         }
         public IActionResult Hospital()
         {

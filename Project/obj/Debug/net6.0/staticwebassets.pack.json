@@ -1,16 +1,20 @@
 {
   "Files": [
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctor.css",
+      "PackagePath": "staticwebassets\\css\\Doctor.css"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctors-profile.css",
+      "PackagePath": "staticwebassets\\css\\Doctors-profile.css"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Login_Doctor.css",
       "PackagePath": "staticwebassets\\css\\Login_Doctor.css"
-    },
-    {
-      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Profile.css",
-      "PackagePath": "staticwebassets\\css\\Profile.css"
     },
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Signup.css",
@@ -181,6 +185,10 @@
       "PackagePath": "staticwebassets\\img\\metropole.png"
     },
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\nnn.txt",
+      "PackagePath": "staticwebassets\\img\\nnn.txt"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\onehealth.jpg",
       "PackagePath": "staticwebassets\\img\\onehealth.jpg"
     },
@@ -237,8 +245,16 @@
       "PackagePath": "staticwebassets\\img\\testimonial-3.jpg"
     },
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\unknown.avif",
+      "PackagePath": "staticwebassets\\img\\unknown.avif"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\img\\user.jpg",
       "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Doctor-profile.js",
+      "PackagePath": "staticwebassets\\js\\Doctor-profile.js"
     },
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login.js",

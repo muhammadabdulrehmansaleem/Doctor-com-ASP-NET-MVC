@@ -1,4 +1,4 @@
-﻿@model Project.Models.Patient
+﻿@using Project.Models
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +8,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-    <link href="~/css/profile.css" rel="stylesheet" />
+    <link href="~/css/doctor.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -49,19 +50,7 @@
                         <a class="text-body px-2" href="/Login_Signup/Login">
                             <i class="">Login/Signup</i>
                         </a>
-                        
-                        @*<a class="text-body px-2" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-body ps-2" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>*@
+                       
                     </div>
                 </div>
             </div>
@@ -105,19 +94,28 @@
     </div>
     <!-- Navbar End -->
     <div id="profileCard" class="profile-card">
-        <div class="card-content">
-            <div class="icon" id="s1">
-                <img src="~/img/pp.png" />
+        <div class="wrapper">
+            <div class="img-area" >
+                <div class="inner-area">
+                    <img id="imageElement" src="~/img/pp.png" />
+                </div>
             </div>
-            <div class="info" id="s2">
-                <h3 id="username"></h3>
-                <p id="useremail"></p>
-                <button id="btn_logout" class="styled-button">Logout</button>
+           
+            <div class="name" id="username"></div>
+            <div class="about" id="useremail"></div>
+            <div class="social-icons" id="s2">
+                <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
             </div>
-        </div>
-        <div class="button-container">
-            <button id="button1" class="styled-button">Login</button>
-            <button id="button2" class="styled-button">Signup</button>
+            <div class="buttons">
+                <button id="btn_logout">Logout</button>
+                <button id="Explore">Explore US</button>
+                <button id="button1" class="styled-button">Login</button>
+                <button id="button2" class="styled-button">Signup</button>
+            </div>
+            
         </div>
     </div>
     <script>
@@ -144,7 +142,9 @@
                 document.getElementById('button2').style.display = 'none';
             }
             else {
-                document.getElementById('s1').style.display = 'none';
+                document.getElementById('s2').style.display = 'none';
+                document.getElementById('btn_logout').style.display = 'none';
+                document.getElementById('Explore').style.display = 'none';
                 document.getElementById('s2').style.display = 'none';
                 document.getElementById('button1').style.display = 'block';
                 document.getElementById('button2').style.display = 'block';
