@@ -9,20 +9,29 @@ namespace Project.Hubs
     {
         public async Task SendMessage(int recipientId, string message, int senderId)
         {
-            var chatMessage = new Chat
+            try
             {
-                PatientId = senderId,
-                DoctorId = recipientId,
-                MessageContent = message,
-                MessageTimestamp = DateTime.Now
-            };
+                var chatMessage = new Chat
+                {
+                    PatientId = senderId,
+                    DoctorId = recipientId,
+                    MessageContent = message,
+                    MessageTimestamp = DateTime.Now
+                };
 
-            using (var dbContext = new DoctorComContext())
-            {
-                dbContext.Chats.Add(chatMessage);
-                await dbContext.SaveChangesAsync();
+                using (var dbContext = new DoctorComContext())
+                {
+                    dbContext.Chats.Add(chatMessage);
+                    await dbContext.SaveChangesAsync();
+                }
+                await Clients.All.SendAsync("ReceiveMessage", senderId, message);
+                Console.WriteLine($"Sent message from {senderId} to {recipientId}");
             }
-            await Clients.User(recipientId.ToString()).SendAsync("ReceiveMessage", chatMessage);
+            catch
+            {
+                Console.WriteLine($"Error sending message:");
+            }
+            
         }
 
     }
