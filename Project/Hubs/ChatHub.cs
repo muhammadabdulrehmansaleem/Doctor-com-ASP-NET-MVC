@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Project.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNet.SignalR.Messaging;
 
 namespace Project.Hubs
 {
@@ -24,8 +25,8 @@ namespace Project.Hubs
                     dbContext.Chats.Add(chatMessage);
                     await dbContext.SaveChangesAsync();
                 }
-                await Clients.All.SendAsync("ReceiveMessage", senderId, message);
-                Console.WriteLine($"Sent message from {senderId} to {recipientId}");
+                await Clients.All.SendAsync("ReceiveMessage", recipientId, message);
+
             }
             catch
             {
@@ -33,6 +34,31 @@ namespace Project.Hubs
             }
             
         }
+        public async Task GetMessages(int recipientId, int senderId)
+        {
+            Console.WriteLine("Function caleded");
+            try
+            {
+                using (var dbContext = new DoctorComContext())
+                {
+                    var patientMessages = await dbContext.Chats
+                         .Where(c => (c.PatientId == senderId && c.DoctorId == recipientId) || (c.PatientId == recipientId && c.DoctorId == senderId))
+                          .OrderBy(c => c.MessageTimestamp)
+                          .ToListAsync();
+                    foreach (var mess in patientMessages)
+                        {
+                            Console.WriteLine(mess.MessageContent);
+                        }
+                        await Clients.All.SendAsync("LoadChat", senderId, patientMessages);
+                  
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting messages: {ex.Message}");
+            }
+        }
+
 
     }
 }

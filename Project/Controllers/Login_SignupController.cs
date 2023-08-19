@@ -77,7 +77,12 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
-                    string userJson = JsonConvert.SerializeObject(pat);
+                    var userObject = new
+                    {
+                        User = pat, // or dct
+                        UserRole = "Patient" // or "Doctor"
+                    };
+                    string userJson = JsonConvert.SerializeObject(userObject);
                     // Create a cookie to store the patient data
                     var cookieOptions = new CookieOptions
                     {
@@ -100,7 +105,12 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
-                    string userJson = JsonConvert.SerializeObject(pat);
+                    var userObject = new
+                    {
+                        User = pat, // or dct
+                        UserRole = "Doctor" // or "Doctor"
+                    };
+                    string userJson = JsonConvert.SerializeObject(userObject);
                     // Create a cookie to store the patient data
                     var cookieOptions = new CookieOptions
                     {
