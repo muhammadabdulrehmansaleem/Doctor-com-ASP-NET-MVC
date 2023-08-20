@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gMfVQq4qkpDzS6UxPOMEZlqe4I5w8V/ZZ/DWIkTr42U=",
+  "Hash": "gzTVBqvN6NFaadUUIKHOKU4KnPoHAstJufansFodd/I=",
   "Source": "Project",
   "BasePath": "_content/Project",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Doctor.css"
+    },
+    {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\DoctorInbox.css",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/DoctorInbox.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DoctorInbox.css"
     },
     {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctors-profile.css",
@@ -1103,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\chat.js"
+    },
+    {
+      "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\DoctorInbox.js",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "js/DoctorInbox.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DoctorInbox.js"
     },
     {
       "Identity": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Doctor-profile.js",

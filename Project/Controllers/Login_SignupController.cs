@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Project.Controllers
 {
-    
+
     public class Login_SignupController : Controller
     {
         public IActionResult Login()
@@ -77,6 +77,10 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
+                    if (Request.Cookies["UserInfo"] != null)
+                    {
+                        Response.Cookies.Delete("UserInfo");
+                    }
                     var userObject = new
                     {
                         User = pat, // or dct
@@ -105,6 +109,10 @@ namespace Project.Controllers
             {
                 if (pat.Email == s.Email && pat.Password == s.Password)
                 {
+                    if (Request.Cookies["UserInfo"] != null)
+                    {
+                        Response.Cookies.Delete("UserInfo");
+                    }
                     var userObject = new
                     {
                         User = pat, // or dct

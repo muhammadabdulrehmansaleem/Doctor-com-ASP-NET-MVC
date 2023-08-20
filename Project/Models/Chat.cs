@@ -14,4 +14,6 @@ public partial class Chat
     public string MessageContent { get; set; } = null!;
 
     public DateTime MessageTimestamp { get; set; }
+
+    public string UserRole { get; set; } = null!;
 }

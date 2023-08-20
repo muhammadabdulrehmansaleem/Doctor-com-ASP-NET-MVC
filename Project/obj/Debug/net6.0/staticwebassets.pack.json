@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\Doctor.css"
     },
     {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\DoctorInbox.css",
+      "PackagePath": "staticwebassets\\css\\DoctorInbox.css"
+    },
+    {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\css\\Doctors-profile.css",
       "PackagePath": "staticwebassets\\css\\Doctors-profile.css"
     },
@@ -255,6 +259,10 @@
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Doctor-profile.js",
       "PackagePath": "staticwebassets\\js\\Doctor-profile.js"
+    },
+    {
+      "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\DoctorInbox.js",
+      "PackagePath": "staticwebassets\\js\\DoctorInbox.js"
     },
     {
       "Id": "D:\\6TH SEMESTER\\SCAD\\WebApplications\\Project\\Project\\wwwroot\\js\\Login.js",

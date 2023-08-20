@@ -1,12 +1,12 @@
 ﻿const connection = new signalR.HubConnectionBuilder()
     .withUrl("/Hubs/ChatHub").build();
-var Dct_id=0;
-var Ptn_id = 0;
-var Ptn_name = "";
+var Dct_id=0;//1
+var Ptn_id = 0;//1
+var Ptn_name = "";//abdulrehman
+var User_role = "";//Doctor
 // Function to send a message
 function sendMessage(recipientId, message, senderId) {
-    console.log(senderId);
-    connection.invoke("SendMessage", recipientId, message, senderId).catch(err => console.error("Error sending message:", err));
+    connection.invoke("SendMessage", recipientId, message, senderId, User_role).catch(err => console.error("Error sending message:", err));
 }
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn_send").addEventListener("click", () => {
@@ -26,17 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
             Dct_id = recipientId;
             var senderId = chatInfo.patient_id;
             Ptn_id = senderId;
-            sendMessage(parseInt(recipientId), message, parseInt(senderId));
+            sendMessage(parseInt(recipientId), message, parseInt(senderId), User_role);
             document.getElementById("messageInput").value = "";
         }
         else {
             document.getElementById("messageInput").value = "Ids not detected";
         }
     });
-    connection.on("ReceiveMessage", (senderId, message) => {
-        if (parseInt(senderId) == Ptn_id) {
-            console.log(message);
-            displayMessage(message);
+    connection.on("ReceiveMessageDoctor", (senderId, message) => {
+        if (parseInt(senderId) == Dct_id && message.userRole !== User_role) {
+            displayMessage(message.messageContent);
         }
         else {
             console.log("User not found");
@@ -44,20 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
     // Event listener for receiving messages from the server
-    connection.on("LoadChat", (senderId, messages) => {
+    connection.on("LoadChatPatient", (senderId, messages) => {
+        console.log(Dct_id, Ptn_id);
         if (parseInt(senderId) == Ptn_id) {
-            console.log(messages);
-            
             if (messages === null) {
                 console.log("No message in db");
             }
             else
             {
                 for (const message of messages) {
-                    if (message.patientId=== Ptn_id) {
+                    if (message.userRole === "Patient") {
                         displayMessagePersonal(message.messageContent);
                     }
-                    if (message.doctorId === Dct_id) {
+                    else if (message.userRole === "Doctor") {
                         displayMessage(message.messageContent);
                     }
                 }
@@ -68,6 +66,30 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("User not found");
         }
         
+    });
+    connection.on("LoadChatDoctor", (senderId, messages) => {
+        if (parseInt(senderId) == Dct_id) {
+            console.log(messages);
+
+            if (messages === null) {
+                console.log("No message in db");
+            }
+            else {
+                for (const message of messages) {
+                    if (message.userRole === "Doctor") {
+                        displayMessagePersonal(message.messageContent);
+                    }
+                    else if (message.userRole === "Patient") {
+                        displayMessage(message.messageContent);
+                    }
+                }
+
+            }
+        }
+        else {
+            console.log("User not found");
+        }
+
     });
     // Start the connection to the SignalR hub
     connection.start().then(() => {
@@ -83,13 +105,14 @@ document.addEventListener("DOMContentLoaded", () => {
             var senderId = chatInfo.patient_id;
             Ptn_id = senderId;
             Ptn_name = chatInfo.patient_name;
+            User_role = chatInfo.user_role;
             console.log(Ptn_name);
             document.getElementById("ptn_name").textContent = Ptn_name;
         }
         else {
             document.getElementById("messageInput").value = "Ids not detected";
         }
-        connection.invoke("GetMessages", parseInt(Dct_id), parseInt(Ptn_id)).catch(err => console.error("Error calling get all messages :", err));
+        connection.invoke("GetMessages", parseInt(Dct_id), parseInt(Ptn_id), User_role).catch(err => console.error("Error calling get all messages :", err));
     }
     function displayMessage(message) {
         if (message === null)

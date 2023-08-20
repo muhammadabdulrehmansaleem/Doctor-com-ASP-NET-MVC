@@ -63,5 +63,27 @@ namespace Project.Controllers
         {
             return View();
         }
+        public IActionResult DoctorInbox(int userId)
+        {
+            
+            try
+            {
+                using (var dbContext = new DoctorComContext())
+                {
+                    var distinctPatients = dbContext.Chats
+                        .Where(c => c.DoctorId == userId && c.UserRole == "Patient")
+                        .GroupBy(c => c.PatientId)
+                        .Select(g => g.OrderByDescending(c => c.MessageTimestamp).FirstOrDefault())
+                        .ToList();
+
+                    return View(distinctPatients);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting patients: {ex.Message}");
+                return View(new List<Chat>()); // Return an empty list if there's an error
+            }
+        }
     }   
 }

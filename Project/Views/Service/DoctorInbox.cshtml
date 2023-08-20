@@ -1,0 +1,102 @@
+﻿﻿@using Project.Models
+@{
+    Layout = "_Layout";
+}
+@model List<Chat>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/css/doctorinbox.css" rel="stylesheet" />
+<script src="~/js/doctorinbox.js"></script>
+<div class="container2">
+    <div class="sidebar">
+        <div class="container bootstrap snippets bootdey">
+            <div class="tile tile-alt" id="messages-main">
+                <div class="ms-menu">
+                    <div class="ms-user clearfix">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar pull-left">
+                        <div>Signed in as <br> m-hollaway@gmail.com</div>
+                    </div>
+
+                    <div class="list-group lg-alt">
+                        @foreach (var patient in Model)
+                        {
+                            <a class="list-group-item media" href="">
+                                <div class="pull-left">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
+                                </div>
+                                <div class="media-body">
+                                    <small class="list-group-item-heading">@patient.PatientId</small>
+                                   @* <small class="list-group-item-text c-gray"></small>*@
+                                </div>
+                            </a>
+                        }
+                       @* <a class="list-group-item media" href="">
+                            <div class="pull-left">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
+                            </div>
+                            <div class="media-body">
+                                <small class="list-group-item-heading">Davil Parnell</small>
+                                <small class="list-group-item-text c-gray">Fierent fastidii recteque ad pro</small>
+                            </div>
+                        </a>
+                        <a class="list-group-item media" href="">
+                            <div class="lv-avatar pull-left">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="img-avatar">
+                            </div>
+                            <div class="media-body">
+                                <div class="list-group-item-heading">Kane Williams</div>
+                                <small class="list-group-item-text c-gray">Suspendisse justo nulla luctus nec</small>
+                            </div>
+                        </a>*@
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="chat">
+        <div class="card card-bordered">
+            <div class="card-header">
+                <h4 class="card-title" id="ptn_name"><strong>Chat</strong></h4>
+                <a class="btn btn-xs btn-secondary" href="#" data-abc="true">Let's Chat App</a>
+            </div>
+
+            <div class="ps-container ps-theme-default ps-active-y" id="chat-content" ">
+                <div class="message-container">
+                    <p class="sent">Hello, how are you doing?</p>
+                    <p class="received-gradient">Hi there! I'm doing great, thanks.</p>
+                    <p class="sent">That's good to hear!</p>
+                    <p class="received-gradient">Absolutely! 😄</p>
+                    <!-- More messages can be added here -->
+                </div>
+                
+            </div>
+            <div class="publisher bt-1 border-light">
+                <img class="avatar avatar-xs" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
+                <input id="messageInput" class="publisher-input" type="text" placeholder="Write something">
+                <button class="publisher-btn text-info" id="btn_send" href="#" data-abc="true"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    document.getElementById("btn_send").addEventListener("click", function () {
+        // Get the text input from the "messageInput" input element
+        const message = document.getElementById("messageInput").value;
+
+        // Create a new p element
+        const newParagraph = document.createElement("p");
+        newParagraph.className = "sent";
+        // Set the content of the new p element to the extracted text
+        newParagraph.textContent = message;
+
+        // Append the new p element to the "reverse_chat" div
+        document.querySelector(".message-container").appendChild(newParagraph);
+
+        // Clear the input box after appending the new paragraph
+        document.getElementById("messageInput").value = "";
+    });
+</script>

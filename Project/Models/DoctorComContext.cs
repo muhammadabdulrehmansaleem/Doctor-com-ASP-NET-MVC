@@ -38,6 +38,10 @@ public partial class DoctorComContext : DbContext
             entity.ToTable("Chat");
 
             entity.Property(e => e.MessageTimestamp).HasDefaultValueSql("(sysdatetime())");
+            entity.Property(e => e.UserRole)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("User_role");
         });
 
         modelBuilder.Entity<Doctor>(entity =>
