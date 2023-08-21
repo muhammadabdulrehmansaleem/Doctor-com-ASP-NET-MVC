@@ -67,7 +67,30 @@ namespace Project.Hubs
                 Console.WriteLine($"Error getting messages: {ex.Message}");
             }
         }
+        public async Task LoadChatForDoctor(int DoctorId, int PatinetId)
+        {
+            Console.WriteLine("DoctorChat is called");
+            try
+            {
+                using (var dbContext = new DoctorComContext())
+                {
+                    var patientMessages = await dbContext.Chats
+                         .Where(c => (c.PatientId == PatinetId && c.DoctorId == DoctorId) || (c.PatientId == DoctorId && c.DoctorId == PatinetId))
+                          .OrderBy(c => c.MessageTimestamp)
+                          .ToListAsync();
+                    foreach (var msg in patientMessages)
+                    {
+                        Console.WriteLine(msg.MessageContent);
+                    }
+                    await Clients.All.SendAsync("LoadChat", DoctorId, patientMessages);
+                }
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting messages: {ex.Message}");
+            }
+        }
 
     }
 }

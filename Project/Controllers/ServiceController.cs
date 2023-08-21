@@ -75,8 +75,11 @@ namespace Project.Controllers
                         .GroupBy(c => c.PatientId)
                         .Select(g => g.OrderByDescending(c => c.MessageTimestamp).FirstOrDefault())
                         .ToList();
-
-                    return View(distinctPatients);
+                    var patientIds = distinctPatients.Select(p => p.PatientId).ToList();
+                    var patients = dbContext.Patients
+                        .Where(p => patientIds.Contains(p.Id))
+                        .ToList();
+                    return View(patients);
                 }
             }
             catch (Exception ex)

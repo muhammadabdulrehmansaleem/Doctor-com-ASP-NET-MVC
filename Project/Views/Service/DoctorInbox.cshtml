@@ -2,10 +2,11 @@
 @{
     Layout = "_Layout";
 }
-@model List<Chat>
+@model List<Patient>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="~/css/doctorinbox.css" rel="stylesheet" />
 <script src="~/js/doctorinbox.js"></script>
+
 <div class="container2">
     <div class="sidebar">
         <div class="container bootstrap snippets bootdey">
@@ -19,39 +20,18 @@
                     <div class="list-group lg-alt">
                         @foreach (var patient in Model)
                         {
-                            <a class="list-group-item media" href="">
+                            <a class="list-group-item media load-chat-link" id="Load_Chat" data-patient-id="@patient.Id" data-patient-name="@patient.Name">
                                 <div class="pull-left">
                                     <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
                                 </div>
                                 <div class="media-body">
-                                    <small class="list-group-item-heading">@patient.PatientId</small>
-                                   @* <small class="list-group-item-text c-gray"></small>*@
+                                    <small class="list-group-item-heading">Patinet Id=@patient.Id</small><br>
+                                    <small class="list-group-item-text c-gray" style="text-transform: uppercase;">@patient.Name</small>
                                 </div>
                             </a>
                         }
-                       @* <a class="list-group-item media" href="">
-                            <div class="pull-left">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
-                            </div>
-                            <div class="media-body">
-                                <small class="list-group-item-heading">Davil Parnell</small>
-                                <small class="list-group-item-text c-gray">Fierent fastidii recteque ad pro</small>
-                            </div>
-                        </a>
-                        <a class="list-group-item media" href="">
-                            <div class="lv-avatar pull-left">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="img-avatar">
-                            </div>
-                            <div class="media-body">
-                                <div class="list-group-item-heading">Kane Williams</div>
-                                <small class="list-group-item-text c-gray">Suspendisse justo nulla luctus nec</small>
-                            </div>
-                        </a>*@
                     </div>
                 </div>
-
-                
-
             </div>
         </div>
     </div>
@@ -62,7 +42,7 @@
                 <a class="btn btn-xs btn-secondary" href="#" data-abc="true">Let's Chat App</a>
             </div>
 
-            <div class="ps-container ps-theme-default ps-active-y" id="chat-content" ">
+            <div class="ps-container ps-theme-default ps-active-y" id="chat-content">
                 <div class="message-container">
                     <p class="sent">Hello, how are you doing?</p>
                     <p class="received-gradient">Hi there! I'm doing great, thanks.</p>
